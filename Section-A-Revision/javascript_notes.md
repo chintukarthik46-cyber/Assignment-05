@@ -519,7 +519,7 @@ Abstraction
 
 ---
 
-## 🎯 Quick Revision Questions (Higher-Order Functions)
+##  Quick Revision Questions (Higher-Order Functions)
 
 1. What is a higher-order function? Give 3 examples.  
 → A function that takes another function as argument or returns one.  
@@ -630,7 +630,7 @@ Named
 
 ---
 
-## A.8️⃣ Objects
+## A.8️ Objects
 
 
 ## 1️. Object Creation Methods
