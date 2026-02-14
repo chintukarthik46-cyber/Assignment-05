@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyStore Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+ <!------------------------------- header--------------------------->
+  <header class="top-nav">
+    <div class="logo">MyStore</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+    </div>
+
+    <div class="user-profile">
+      <img src="./Assets/user.png " alt="User" height="30px">
+      <span>User</span>
+    </div>
+  </header>
+ 
+  <div class="dashboard-wrapper">
+
+    <!---------------------------------------- sidebar ------------------------>
+    <aside class="sidebar">
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Products</li>
+        <li>Order</li>
+        <li>Analytics</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+
+    <!---------------------------------- main content -------------------------->
+    <main class="main-content">
+
+      <!------------------------------------------- electronics -------------------->
+      <section class="category-section">
+        <h2>Electronics</h2>
+        <div class="product-grid">
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/61oa+zoqwmL_AC_UL320_.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Smartphone</h3>
+              <p class="price">₹18,999</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/2_newNoisepro6R_SS900_QL85_.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Smart Watch</h3>
+              <p class="price">₹4,499</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/81VttNsrDwL_AC_UL320_.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Bluetooth Speaker</h3>
+              <p class="price">₹1,899</p>
+              <p class="stock out-stock">Out of Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/51RaySTbIVL_AC_UY218_.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Wireless Earbuds</h3>
+              <p class="price">₹2,299</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!----------------------------------- home & kitchen ---------------------------->
+      <section class="category-section">
+        <h2>Home & Kitchen</h2>
+        <div class="product-grid">
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/blender.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Blender</h3>
+              <p class="price">₹2,999</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/oven.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Microwave Oven</h3>
+              <p class="price">₹7,999</p>
+              <p class="stock out-stock">Out of Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/coffee.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Coffee Maker</h3>
+              <p class="price">₹3,499</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/vaccume.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Vacuum Cleaner</h3>
+              <p class="price">₹5,499</p>
+              <p class="stock out-stock">Out of Stock</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!----------------------------------------------books ------------------------------>
+      <section class="category-section">
+        <h2>Books</h2>
+        <div class="product-grid">
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/Java.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Java Programming</h3>
+              <p class="price">₹799</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/HtmlCssJS.jpg">
+            </div>
+            <div class="card-content">
+              <h3>HTML & CSS Guide</h3>
+              <p class="price">₹599</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/DataStructure.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Data Structures</h3>
+              <p class="price">₹899</p>
+              <p class="stock out-stock">Out of Stock</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-box">
+              <img src="./Assets/cleanCode.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Clean Code</h3>
+              <p class="price">₹699</p>
+              <p class="stock in-stock">In Stock</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!--------------------------------------footer------------------------------>
+  <footer class="footer">
+    <p>© 2026 MyStore Admin Dashboard | Designed by Karthik</p>
+  </footer>
+
+</body>
+</html>
