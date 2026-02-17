@@ -144,7 +144,7 @@ let funExp = function () {
 funExp();
 
 /**
- * ✅ Output: "function expression"
+ * Output: "function expression"
  *
  * Reason:
  * - Now the function expression has been assigned to the variable.

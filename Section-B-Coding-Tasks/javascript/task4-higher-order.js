@@ -16,7 +16,7 @@ function repeat(n, action) {
 function sayHello() {
   console.log("hello");
 }
-// repeat(2, sayHello); 
+// repeat(2, sayHello);
 
 //   Task 4.2: Create a higher-order function filterArray(arr, condition) where
 //   condition is a callback function that returns true/false.
@@ -74,7 +74,6 @@ console.log(
  * [2, 4]
  */
 
-
 //  Task 4.3: create a function multiplyBy(factor) that returns another function which
 //  multiplies its argument by the factor (function returning function).
 
@@ -94,6 +93,55 @@ function multiplyBy(factor) {
 const double = multiplyBy(2);
 const triple = multiplyBy(3);
 
-console.log(double(5)); //10
+// console.log(double(5)); //10
 
+//  Task 4.4: Create a higher-order function operate(a, b, operation) where operation is
+//  a callback that performs different math operations.
+
+function operate(a, b, operate) {
+  /**
+   * a → first number
+   * b → second number
+   * operation → callback function
+   *
+   * Since operation is a function,
+   * we execute it and pass a and b.
+   */
+  return operate(a, b);
+}
+
+function add(a, b) {
+  return a + b;
+}
+function sub(a, b) {
+  return a - b;
+}
+function multiply(a, b) {
+  return a * b;
+}
+function divide(a, b) {
+  return b === 0 ? "cannot divide by zero" : a / b;
+}
+// Calling operate with different callbacks
+// console.log(operate(10, 20, add));
+// console.log(operate(30, 15, sub));
+// console.log(operate(10, 20, multiply));
+
+//    Task 4.5: Implement a custom forEach function that takes an array and a callback function.
+
+function forEach(arr, callback) {
+
+  //arr → array to iterate
+  // callback → function to execute for each elemen
+
+  for (let i = 0; i < arr.length; i++) {
+   
+    callback(arr[i], i, arr);
+  }
+}
+forEach([10, 20, 30], function(element, index, array) {
+  console.log("element:", element);
+  console.log("index:", index);
+  console.log("array:", array);
+});
 
